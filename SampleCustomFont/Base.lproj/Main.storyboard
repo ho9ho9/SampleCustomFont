@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AoyagiSosekiFont2.otf">
+            <string>AoyagiSosekiFont2OTF</string>
+        </mutableArray>
+        <mutableArray key="Pigmo-00.otf">
+            <string>pigmo-00</string>
+        </mutableArray>
+        <mutableArray key="nicomoji-plus_v0.9.ttf">
+            <string>NicoMoji+</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SampleCustomFont" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,7 +27,57 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="青柳疎石フォント" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdI-eL-g6I">
+                                <rect key="frame" x="16" y="28" width="568" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="P1H-hj-roR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AoyagiSosekiFont2OTF" family="AoyagiSosekiFont2OTF" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ピグモ00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvG-Yb-fQH">
+                                <rect key="frame" x="16" y="154" width="568" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="kG9-J1-xMq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="pigmo-00" family="pigmo" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ニコモジ＋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYd-2w-66K">
+                                <rect key="frame" x="16" y="91" width="568" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Vup-Op-GFu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NicoMoji+" family="NicoMoji+" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="デフォルト" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQY-ZW-141">
+                                <rect key="frame" x="16" y="217" width="568" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wdI-eL-g6I" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="B5s-qK-eR5"/>
+                            <constraint firstItem="dYd-2w-66K" firstAttribute="trailing" secondItem="VvG-Yb-fQH" secondAttribute="trailing" id="BVw-3q-Wyw"/>
+                            <constraint firstItem="wdI-eL-g6I" firstAttribute="leading" secondItem="dYd-2w-66K" secondAttribute="leading" id="Dpn-qP-1nh"/>
+                            <constraint firstItem="wdI-eL-g6I" firstAttribute="trailing" secondItem="dYd-2w-66K" secondAttribute="trailing" id="IEn-5S-7Yj"/>
+                            <constraint firstItem="dYd-2w-66K" firstAttribute="top" secondItem="wdI-eL-g6I" secondAttribute="bottom" constant="8" symbolic="YES" id="Jc4-fG-3s3"/>
+                            <constraint firstItem="VvG-Yb-fQH" firstAttribute="top" secondItem="dYd-2w-66K" secondAttribute="bottom" constant="8" symbolic="YES" id="N98-Fg-Hzr"/>
+                            <constraint firstItem="cQY-ZW-141" firstAttribute="top" secondItem="VvG-Yb-fQH" secondAttribute="bottom" constant="8" symbolic="YES" id="arN-XY-w01"/>
+                            <constraint firstItem="cQY-ZW-141" firstAttribute="leading" secondItem="VvG-Yb-fQH" secondAttribute="leading" id="d22-WP-CXg"/>
+                            <constraint firstItem="dYd-2w-66K" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="iRI-Rs-qeF"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cQY-ZW-141" secondAttribute="bottom" priority="250" constant="328" id="sJk-DF-wwR"/>
+                            <constraint firstItem="VvG-Yb-fQH" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="taq-nA-fWL"/>
+                            <constraint firstItem="dYd-2w-66K" firstAttribute="leading" secondItem="VvG-Yb-fQH" secondAttribute="leading" id="v6v-R5-IdP"/>
+                            <constraint firstItem="cQY-ZW-141" firstAttribute="trailing" secondItem="VvG-Yb-fQH" secondAttribute="trailing" id="yVO-U9-L3x"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -13,6 +13,9 @@
 		5AAF44031A43D4BA005B7127 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AAF44021A43D4BA005B7127 /* Images.xcassets */; };
 		5AAF44061A43D4BA005B7127 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAF44041A43D4BA005B7127 /* LaunchScreen.xib */; };
 		5AAF44121A43D4BA005B7127 /* SampleCustomFontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAF44111A43D4BA005B7127 /* SampleCustomFontTests.swift */; };
+		5AAF441F1A468A53005B7127 /* AoyagiSosekiFont2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5AAF441C1A468A53005B7127 /* AoyagiSosekiFont2.otf */; };
+		5AAF44201A468A53005B7127 /* nicomoji-plus_v0.9.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AAF441D1A468A53005B7127 /* nicomoji-plus_v0.9.ttf */; };
+		5AAF44211A468A53005B7127 /* Pigmo-00.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5AAF441E1A468A53005B7127 /* Pigmo-00.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		5AAF440B1A43D4BA005B7127 /* SampleCustomFontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleCustomFontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AAF44101A43D4BA005B7127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AAF44111A43D4BA005B7127 /* SampleCustomFontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCustomFontTests.swift; sourceTree = "<group>"; };
+		5AAF441C1A468A53005B7127 /* AoyagiSosekiFont2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AoyagiSosekiFont2.otf; sourceTree = "<group>"; };
+		5AAF441D1A468A53005B7127 /* nicomoji-plus_v0.9.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nicomoji-plus_v0.9.ttf"; sourceTree = "<group>"; };
+		5AAF441E1A468A53005B7127 /* Pigmo-00.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pigmo-00.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		5AAF43F81A43D4BA005B7127 /* SampleCustomFont */ = {
 			isa = PBXGroup;
 			children = (
+				5AAF441B1A43D80E005B7127 /* fonts */,
 				5AAF43FB1A43D4BA005B7127 /* AppDelegate.swift */,
 				5AAF43FD1A43D4BA005B7127 /* ViewController.swift */,
 				5AAF43FF1A43D4BA005B7127 /* Main.storyboard */,
@@ -110,6 +117,16 @@
 				5AAF44101A43D4BA005B7127 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AAF441B1A43D80E005B7127 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5AAF441C1A468A53005B7127 /* AoyagiSosekiFont2.otf */,
+				5AAF441D1A468A53005B7127 /* nicomoji-plus_v0.9.ttf */,
+				5AAF441E1A468A53005B7127 /* Pigmo-00.otf */,
+			);
+			name = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +209,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAF44211A468A53005B7127 /* Pigmo-00.otf in Resources */,
 				5AAF44011A43D4BA005B7127 /* Main.storyboard in Resources */,
+				5AAF44201A468A53005B7127 /* nicomoji-plus_v0.9.ttf in Resources */,
+				5AAF441F1A468A53005B7127 /* AoyagiSosekiFont2.otf in Resources */,
 				5AAF44061A43D4BA005B7127 /* LaunchScreen.xib in Resources */,
 				5AAF44031A43D4BA005B7127 /* Images.xcassets in Resources */,
 			);

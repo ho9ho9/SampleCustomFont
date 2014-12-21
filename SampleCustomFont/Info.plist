@@ -36,5 +36,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>AoyagiSosekiFont2.otf</string>
+		<string>nicomoji-plus_v0.9.ttf</string>
+		<string>Pigmo-00.otf</string>
+	</array>
 </dict>
 </plist>
